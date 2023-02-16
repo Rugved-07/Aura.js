@@ -30,6 +30,12 @@ bot.functionManager.createCustomFunction({
       code: `$clientToken`
     });
 
+bot.functionManager.createCustomFunction({
+      name: '$serverid',
+      params: [""],
+      type: 'aoi.js',
+      code: `$guildid`
+    });
     }
 }   
 module.exports = {
