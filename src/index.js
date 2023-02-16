@@ -43,6 +43,15 @@ bot.functionManager.createCustomFunction({
       type: 'aoi.js',
       code: `$guildid`
     });
+
+bot.functionManager.createCustomFunction({
+      name: '$readycommand',
+      params: [""],
+      type: 'aoi.js',
+      code: `
+$log[$djseval[require("table").table([["Owner", client.application.owner.tag],["Client Name",client.user.tag], ["Commands Loaded", client.cmd.default.size],["Websocket Ping", client.ws.ping+"ms"]]);yes]]
+  `  });
+
     }
 }   
 module.exports = {
