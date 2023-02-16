@@ -24,20 +24,6 @@ bot.functionManager.createCustomFunction({
     });
 
 bot.functionManager.createCustomFunction({
-      name: '$modelcpu',
-      params: [""],
-      type: 'aoi.js',
-      code: `$djsEval[require("os").cpus()[0].model;yes]`
-    });
-
-bot.functionManager.createCustomFunction({
-      name: '$archplatform',
-      params: [""],
-      type: 'aoi.js',
-      code: `$djsEval[`${process.platform} ${process.arch}`;yes]`
-    });
-
-bot.functionManager.createCustomFunction({
       name: '$saycommand',
       params: [""],
       type: 'aoi.js',
