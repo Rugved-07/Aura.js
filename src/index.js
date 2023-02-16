@@ -10,10 +10,10 @@ class Plugins {
     const bot = this.args.bot;
 
     bot.functionManager.createCustomFunction({
-      name: '$request',
+      name: '$auraversion',
       params: [""],
       type: 'aoi.js',
-      code: `$httpRequest[$message[1];$message[2];;$message[3];Failed to request!]`
+      code: `v1.0.0`
     });
     }
 }   
