@@ -17,6 +17,13 @@ class Plugins {
     });
 
 bot.functionManager.createCustomFunction({
+      name: '$saycommand',
+      params: [""],
+      type: 'aoi.js',
+      code: `$message`
+    });
+
+bot.functionManager.createCustomFunction({
       name: '$botid',
       params: [""],
       type: 'aoi.js',
