@@ -15,6 +15,21 @@ class Plugins {
       type: 'aoi.js',
       code: `v1.0.0`
     });
+
+bot.functionManager.createCustomFunction({
+      name: '$botid',
+      params: [""],
+      type: 'aoi.js',
+      code: `$clientid`
+    });
+
+bot.functionManager.createCustomFunction({
+      name: '$bottoken',
+      params: [""],
+      type: 'aoi.js',
+      code: `$clientToken`
+    });
+
     }
 }   
 module.exports = {
